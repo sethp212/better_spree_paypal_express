@@ -22,8 +22,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
+
+  s.add_runtime_dependency 'solidus', '~> 2.1.0'
   #s.add_dependency 'spree_core', '~> 3.1.0.beta'
-  #s.add_dependency 'paypal-sdk-merchant', '1.106.1'
+  s.add_dependency 'paypal-sdk-merchant'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
